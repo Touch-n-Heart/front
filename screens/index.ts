@@ -1,4 +1,4 @@
-export { default as Home } from "./Home";
-export { default as Matches } from "./Matches";
-export { default as Chat } from "./Chat";
-export { default as Profile } from "./Profile";
+export { default as Match } from "./Match";
+export { default as Playground } from "./Playground";
+export { default as Messages } from "./Messages";
+export { default as Me } from "./Me";

@@ -1,6 +1,6 @@
-export { default as CardItem } from "./CardItem";
-export { default as City } from "./City";
-export { default as Filters } from "./Filters";
+export { default as CardItem } from "./Match/CardItem";
+export { default as City } from "./Match/City";
+export { default as Filters } from "./Match/Filters";
 export { default as Icon } from "./Icon";
-export { default as Message } from "./Message";
-export { default as ProfileItem } from "./ProfileItem";
+export { default as Message } from "./Messages/Message";
+export { default as ProfileItem } from "./Me/ProfileItem";

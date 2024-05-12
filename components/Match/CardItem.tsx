@@ -1,14 +1,14 @@
 import React from "react";
 import { Text, View, Image, Dimensions, TouchableOpacity } from "react-native";
-import Icon from "./Icon";
-import { CardItemT } from "../types";
+import Icon from "../Icon";
+import { CardItemT } from "../../types";
 import styles, {
   DISLIKE_ACTIONS,
   FLASH_ACTIONS,
   LIKE_ACTIONS,
   STAR_ACTIONS,
   WHITE,
-} from "../assets/styles";
+} from "../../assets/styles";
 
 const CardItem = ({
   description,

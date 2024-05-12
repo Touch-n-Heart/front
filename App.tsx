@@ -2,7 +2,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Home, Matches, Chat, Profile } from "./screens";
+import { Match, Playground, Messages, Me } from "./screens";
 import { PRIMARY_COLOR, DARK_GRAY, BLACK, WHITE } from "./assets/styles";
 import TabBarIcon from "./components/TabBarIcon";
 import { LinearGradient } from 'expo-linear-gradient'
@@ -40,56 +40,52 @@ const App = () => (
             }}
           >
             <Tab.Screen
-              name="Explore"
-              component={Home}
+              name="Match"
+              component={Match}
               options={{
                 tabBarIcon: ({ focused }) => (
                   <TabBarIcon
                     focused={focused}
                     iconName="search"
-                    text="Explore"
                   />
                 ),
               }}
             />
 
             <Tab.Screen
-              name="Matches"
-              component={Matches}
+              name="Playground"
+              component={Playground}
               options={{
                 tabBarIcon: ({ focused }) => (
                   <TabBarIcon
                     focused={focused}
                     iconName="heart"
-                    text="Matches"
                   />
                 ),
               }}
             />
 
             <Tab.Screen
-              name="Chat"
-              component={Chat}
+              name="Messages"
+              component={Messages}
               options={{
                 tabBarIcon: ({ focused }) => (
                   <TabBarIcon
                     focused={focused}
                     iconName="chatbubble"
-                    text="Chat"
                   />
                 ),
               }}
             />
 
             <Tab.Screen
-              name="Profile"
-              component={Profile}
+              name="Me"
+              component={Me}
               options={{
                 tabBarIcon: ({ focused }) => (
                   <TabBarIcon
                     focused={focused}
                     iconName="person"
-                    text="Profile"
                   />
                 ),
               }}

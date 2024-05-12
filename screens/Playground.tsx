@@ -1,39 +1,41 @@
 import React from "react";
 import {
   ScrollView,
+  View,
   Text,
   TouchableOpacity,
   ImageBackground,
-  View,
   FlatList,
 } from "react-native";
-import { Icon, Message } from "../components";
+import { CardItem, Icon } from "../components";
 import DEMO from "../assets/data/demo";
 import styles, { DARK_GRAY } from "../assets/styles";
 import { LinearGradient } from 'expo-linear-gradient'
 
-const Messages = () => (
+const Matches = () => (
   <LinearGradient
     colors={['#F4FDFF', '#FFFEF8']}
     style={styles.bg}
   >
-    <View style={styles.containerMessages}>
+    <View style={styles.containerMatches}>
       <View style={styles.top}>
-        <Text style={styles.title}>Chat</Text>
+        <Text style={styles.title}>Playground</Text>
         <TouchableOpacity>
           <Icon name="ellipsis-vertical" color={DARK_GRAY} size={20} />
         </TouchableOpacity>
       </View>
 
       <FlatList
+        numColumns={2}
         data={DEMO}
         keyExtractor={(item, index) => index.toString()}
         renderItem={({ item }) => (
           <TouchableOpacity>
-            <Message
+            <CardItem
               image={item.image}
               name={item.name}
-              lastMessage={item.message}
+              isOnline={item.isOnline}
+              hasVariant
             />
           </TouchableOpacity>
         )}
@@ -42,4 +44,4 @@ const Messages = () => (
   </LinearGradient>
 );
 
-export default Messages;
+export default Matches;
