@@ -13,6 +13,7 @@ export type IconT = {
   size: number;
   color: string;
   style?: any;
+  url?: string;
 };
 
 export type MessageT = {
@@ -36,6 +37,7 @@ export type TabBarIconT = {
   focused: boolean;
   iconName: any;
   text: string;
+  iconUrl?: string;
 };
 
 export type DataT = {

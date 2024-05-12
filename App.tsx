@@ -5,7 +5,6 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Match, Playground, Messages, Me } from "./screens";
 import { PRIMARY_COLOR, DARK_GRAY, BLACK, WHITE } from "./assets/styles";
 import TabBarIcon from "./components/TabBarIcon";
-import { LinearGradient } from 'expo-linear-gradient'
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -46,7 +45,7 @@ const App = () => (
                 tabBarIcon: ({ focused }) => (
                   <TabBarIcon
                     focused={focused}
-                    iconName="search"
+                    iconName="th-large"
                   />
                 ),
               }}
@@ -60,6 +59,7 @@ const App = () => (
                   <TabBarIcon
                     focused={focused}
                     iconName="heart"
+                    iconUrl=""
                   />
                 ),
               }}
@@ -72,7 +72,7 @@ const App = () => (
                 tabBarIcon: ({ focused }) => (
                   <TabBarIcon
                     focused={focused}
-                    iconName="chatbubble"
+                    iconName="commenting"
                   />
                 ),
               }}
@@ -85,7 +85,7 @@ const App = () => (
                 tabBarIcon: ({ focused }) => (
                   <TabBarIcon
                     focused={focused}
-                    iconName="person"
+                    iconName="user"
                   />
                 ),
               }}
