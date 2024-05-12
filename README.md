@@ -1,6 +1,6 @@
 # Touch n Heart  - front
 
-4 screens are availables : Explore, Matches, Messages and Profile. You'll find some components like Card Component to pass props and variant. No frameworks UI like Bootstrap or Material UI are used.
+4 screens are availables : Match, Playground, Messages and Me.
 
 - **Easy to use** 🤘
 - **Made with Expo** ⚡
