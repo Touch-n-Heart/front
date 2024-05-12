@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { View, ImageBackground } from "react-native";
 import CardStack, { Card } from "react-native-card-stack-swiper";
-import { City, Filters, CardItem } from "../components";
-import styles from "../assets/styles";
-import DEMO from "../assets/data/demo";
+import { City, Filters, CardItem } from "../../components";
+import styles from "../../assets/styles";
+import DEMO from "../../assets/data/demo";
 import { LinearGradient } from 'expo-linear-gradient'
 
-const Home = () => {
+export const MatchScreen = () => {
   const [swiper, setSwiper] = useState<CardStack | null>(null);
 
   return (
@@ -42,5 +42,3 @@ const Home = () => {
     </LinearGradient>
   );
 };
-
-export default Home;

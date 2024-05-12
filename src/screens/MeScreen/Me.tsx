@@ -6,12 +6,12 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-import { Icon, ProfileItem } from "../components";
-import DEMO from "../assets/data/demo";
-import styles, { WHITE } from "../assets/styles";
+import { Icon, ProfileItem } from "../../components";
+import DEMO from "../../assets/data/demo";
+import styles, { WHITE } from "../../assets/styles";
 import { LinearGradient } from 'expo-linear-gradient'
 
-const Profile = () => {
+export const MeScreen = () => {
   const { age, image, info1, info2, info3, info4, location, match, name } =
     DEMO[7];
 
@@ -68,5 +68,3 @@ const Profile = () => {
     </LinearGradient>
   );
 };
-
-export default Profile;

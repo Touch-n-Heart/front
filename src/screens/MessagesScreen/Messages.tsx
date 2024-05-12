@@ -7,12 +7,12 @@ import {
   View,
   FlatList,
 } from "react-native";
-import { Icon, Message } from "../components";
-import DEMO from "../assets/data/demo";
-import styles, { DARK_GRAY } from "../assets/styles";
+import { Icon, Message } from "../../components";
+import DEMO from "../../assets/data/demo";
+import styles, { DARK_GRAY } from "../../assets/styles";
 import { LinearGradient } from 'expo-linear-gradient'
 
-const Messages = () => (
+export const MessagesScreen = () => (
   <LinearGradient
     colors={['#F4FDFF', '#FFFEF8']}
     style={styles.bg}
@@ -41,5 +41,3 @@ const Messages = () => (
     </View>
   </LinearGradient>
 );
-
-export default Messages;

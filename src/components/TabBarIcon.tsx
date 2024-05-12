@@ -3,7 +3,7 @@ import { Text, View } from "react-native";
 // import Icon from "./Icon";
 import IconFontAwesome from "./IconFontAwesome";
 import styles, { DARK_GRAY, PRIMARY_COLOR } from "../assets/styles";
-import { TabBarIconT } from "../types";
+import { TabBarIconT } from "../src/types";
 
 const TabBarIcon = ({ focused, iconName, text }: TabBarIconT) => {
   const iconFocused = focused ? PRIMARY_COLOR : DARK_GRAY;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View, Image } from "react-native";
-import { MessageT } from "../../types";
+import { MessageT } from "../../src/types";
 import styles from "../../assets/styles";
 
 const Message = ({ image, lastMessage, name }: MessageT) => (

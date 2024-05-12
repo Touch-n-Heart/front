@@ -7,12 +7,12 @@ import {
   ImageBackground,
   FlatList,
 } from "react-native";
-import { CardItem, Icon } from "../components";
-import DEMO from "../assets/data/demo";
-import styles, { DARK_GRAY } from "../assets/styles";
+import { CardItem, Icon } from "../../components";
+import DEMO from "../../assets/data/demo";
+import styles, { DARK_GRAY } from "../../assets/styles";
 import { LinearGradient } from 'expo-linear-gradient'
 
-const Matches = () => (
+export const PlaygroundScreen = () => (
   <LinearGradient
     colors={['#F4FDFF', '#FFFEF8']}
     style={styles.bg}
@@ -43,5 +43,3 @@ const Matches = () => (
     </View>
   </LinearGradient>
 );
-
-export default Matches;
