@@ -42,6 +42,6 @@ yarn start
 ***│   ├── utils                  // utils ***           
 ***├── App.tsc                    // 程序入口文件 ***         
 ### 新增页面时
-1. /src/screens：创建对应的Screen文件夹
+1. /src/screens：创建对应的Screen
 2. /src/navigation/StoneNavigator.tsx：**create Navigator**
 3. /src/navigation/AppNavigator.tsx：修改**isFirstOpen**的值并导入创建的Navigator可临时查看效果

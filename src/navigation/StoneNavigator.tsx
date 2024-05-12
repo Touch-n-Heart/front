@@ -5,8 +5,9 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { PRIMARY_COLOR, DARK_GRAY, BLACK, WHITE } from "../assets/styles";
 // Icon
 import TabBarIcon from "../components/TabBarIcon";
-// Auth Screens
+// Intro Screens
 import { IntroScreen } from "../screens/IntroScreen";
+// Auth Screens
 import { SignupScreen } from "../screens/SignupScreen";
 // Match Screens
 import { MatchScreen } from "../screens/MatchScreen";
