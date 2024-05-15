@@ -1,13 +1,19 @@
 import React, { useState } from "react";
-import { View, ImageBackground } from "react-native";
+import { View, Image } from "react-native";
 import CardStack, { Card } from "react-native-card-stack-swiper";
-import { City, Filters, CardItem } from "../../components";
+import { City, Filters, CardItem, CardActions } from "../../components";
 import styles from "../../assets/styles";
 import DEMO from "../../assets/data/demo";
 import { LinearGradient } from 'expo-linear-gradient'
 
 export const MatchScreen = () => {
   const [swiper, setSwiper] = useState<CardStack | null>(null);
+  const logoStyle = [
+    {
+      width: 120,
+      height: 50,
+    },
+  ];
 
   return (
     <LinearGradient
@@ -15,9 +21,8 @@ export const MatchScreen = () => {
       style={styles.bg}
     >
       <View style={styles.containerHome}>
-        <View style={styles.top}>
-          <City />
-          <Filters />
+        <View style={[styles.middle, { top: 30 }]}>
+          <Image source={require("../../assets/touch-match.png")} style={logoStyle} />
         </View>
 
         <CardStack
@@ -27,7 +32,7 @@ export const MatchScreen = () => {
           ref={(newSwiper): void => setSwiper(newSwiper)}
         >
           {DEMO.map((item) => (
-            <Card key={item.id}>
+            <Card key={item.id} style={[{ top: 40 }]}>
               <CardItem
                 hasActions
                 image={item.image}
@@ -38,7 +43,10 @@ export const MatchScreen = () => {
             </Card>
           ))}
         </CardStack>
+        <View style={[styles.middle, { top: 540 }]}>
+          <CardActions />
+        </View>
       </View>
-    </LinearGradient>
+    </LinearGradient >
   );
 };
