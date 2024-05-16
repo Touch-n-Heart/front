@@ -1,19 +1,28 @@
-import React from "react";
-import { View, StyleSheet } from "react-native";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import BackgroundMask from '../../components/BackgroundMask';
+import Logo from '../../components/Logo';
 
-export const IntroScreen = () => {
+const styles = StyleSheet.create({
+  content: {
+    position: 'relative',
+    zIndex: 50,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+    height: '100%',
+  },
+});
+
+const WebSplashScreen = () => {
   return (
-    <View style={styles.container}>
-      {/* 加载页 */}
-      loading...
-    </View>
+    <BackgroundMask>
+      <View style={styles.content}>
+        <Logo />
+      </View>
+    </BackgroundMask>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+export default WebSplashScreen;

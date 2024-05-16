@@ -43,12 +43,12 @@ const Tab = createBottomTabNavigator();
 
 const TabNavigator = () => (
   // <NavigationContainer>
-  <TabStack.Navigator>
-    <TabStack.Screen
-      name="Tab"
-      options={{ headerShown: false, animationEnabled: false }}
-    >
-      {() => (
+  // <TabStack.Navigator>
+  //   <TabStack.Screen
+  //     name="Tab"
+  //     options={{ headerShown: false, animationEnabled: false }}
+  //   >
+  //     {() => (
         <Tab.Navigator
           tabBarOptions={{
             showLabel: false,
@@ -123,9 +123,9 @@ const TabNavigator = () => (
             }}
           />
         </Tab.Navigator>
-      )}
-    </TabStack.Screen>
-  </TabStack.Navigator>
+  //     )}
+  //   </TabStack.Screen>
+  // </TabStack.Navigator>
   // </NavigationContainer >
 );
 
