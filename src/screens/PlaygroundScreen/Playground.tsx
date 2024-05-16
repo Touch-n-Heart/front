@@ -24,22 +24,6 @@ export const PlaygroundScreen = () => (
           <Icon name="ellipsis-vertical" color={DARK_GRAY} size={20} />
         </TouchableOpacity>
       </View>
-
-      <FlatList
-        numColumns={2}
-        data={DEMO}
-        keyExtractor={(item, index) => index.toString()}
-        renderItem={({ item }) => (
-          <TouchableOpacity>
-            <CardItem
-              image={item.image}
-              name={item.name}
-              isOnline={item.isOnline}
-              hasVariant
-            />
-          </TouchableOpacity>
-        )}
-      />
     </View>
   </LinearGradient>
 );

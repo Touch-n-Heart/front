@@ -11,7 +11,7 @@ export const ONLINE_STATUS = "#46A575";
 export const OFFLINE_STATUS = "#D04949";
 
 export const STAR_ACTIONS = "#eeea1e";
-export const LIKE_ACTIONS = "#6be718";
+export const LIKE_ACTIONS = "#AA3FEC";
 export const DISLIKE_ACTIONS = "#c21616";
 export const FLASH_ACTIONS = "#714ee4";
 
@@ -21,7 +21,8 @@ export const DIMENSION_HEIGHT = Dimensions.get("window").height;
 export default StyleSheet.create({
   // COMPONENT - CARD ITEM
   containerCardItem: {
-    backgroundColor: WHITE,
+    // backgroundColor: WHITE,
+    flex: 1,
     borderRadius: 8,
     alignItems: "center",
     margin: 10,
@@ -69,9 +70,11 @@ export default StyleSheet.create({
     marginRight: 4,
   },
   actionsCardItem: {
+    width: DIMENSION_WIDTH,
     flexDirection: "row",
     alignItems: "center",
     paddingVertical: 30,
+    justifyContent: "space-between",
   },
   button: {
     width: 60,
@@ -227,6 +230,10 @@ export default StyleSheet.create({
     marginHorizontal: 10,
     flexDirection: "row",
     justifyContent: "space-between",
+    alignItems: "center",
+  },
+  middle: {
+    justifyContent: "center",
     alignItems: "center",
   },
   title: { paddingBottom: 10, fontSize: 22, color: DARK_GRAY },
